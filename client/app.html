@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>London Homes Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="img"></div>
+    <form class="form">
+        <h2>Area (Square Feet)</h2>
+        <input class="area" type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+        <h2>Bedrooms</h2>
+        <div class="switch-field">
+            <input type="radio" id="radio-bhk-1" name="uiBedrooms" value="1" />
+            <label for="radio-bhk-1">1</label>
+            <input type="radio" id="radio-bhk-2" name="uiBedrooms" value="2" checked />
+            <label for="radio-bhk-2">2</label>
+            <input type="radio" id="radio-bhk-3" name="uiBedrooms" value="3" />
+            <label for="radio-bhk-3">3</label>
+            <input type="radio" id="radio-bhk-4" name="uiBedrooms" value="4" />
+            <label for="radio-bhk-4">4</label>
+            <input type="radio" id="radio-bhk-5" name="uiBedrooms" value="5" />
+            <label for="radio-bhk-5">5</label>
+        </div>
+    </form>
+    <form class="form">
+        <h2>Bath</h2>
+        <div class="switch-field">
+            <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1" />
+            <label for="radio-bath-1">1</label>
+            <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked />
+            <label for="radio-bath-2">2</label>
+            <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3" />
+            <label for="radio-bath-3">3</label>
+            <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4" />
+            <label for="radio-bath-4">4</label>
+            <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5" />
+            <label for="radio-bath-5">5</label>
+        </div>
+        <h2>Receptions</h2>
+        <div class = "switch-field">
+            <input type="radio" id="radio-recep-1" name="uiReceptions" value="1" />
+            <label for="radio-recep-1">1</label>
+            <input type="radio" id="radio-recep-2" name="uiReceptions" value="2" checked />
+            <label for="radio-recep-2">2</label>
+            <input type="radio" id="radio-recep-3" name="uiReceptions" value="3" />
+            <label for="radio-recep-3">3</label>
+            <input type="radio" id="radio-recep-4" name="uiReceptions" value="4" />
+            <label for="radio-recep-4">4</label>
+            <input type="radio" id="radio-recep-5" name="uiReceptions" value="5" />
+            <label for="radio-recep-5">5</label>
+            <input type="radio" id="radio-recep-6" name="uiReceptions" value="6" />
+            <label for="radio-recep-6">6</label>
+        </div>
+        <h2>House Type</h2>
+        <div>
+            <select class="location" name="" id="uiTypes">
+                <option value="" disabled="disabled" selected="selected">Choose a House Type</option>
+                <option>Duplex</option>
+                <option>House</option>
+            </select>
+        </div>
+        <h2>Location</h2>
+        <div>
+            <select class="location" name="" id="uiLocations">
+                <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+                <option>Camden London Boro</option>
+                <option>Wandsworth London Boro</option>
+            </select>
+        </div>
+        <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+        <div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</body>
+</html>
