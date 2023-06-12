@@ -28,11 +28,11 @@ When people are looking for a house to purchase, they may not know what the mark
 ## Quick glance at the results
 
 Correlation between the features 
-![](Correlation matrix.png)
+![Correlation matrix](https://github.com/algymud510/London-House-Price-Prediction/assets/134397797/9ebe376c-8c2e-4c52-a581-3cc2ed025b11)
 
 Results of the models used in experimentation (with gridsearched parameters)
 
-![](model scores.PNG)
+<img width="392" alt="model scores" src="https://github.com/algymud510/London-House-Price-Prediction/assets/134397797/c975fb14-4b03-4a5a-a7e6-e4184bc1bfa0">
 
 - The final model used for this project was the Random Forest Regressor
 - The metric which was used to assess the accuracy of the Regression models was the R2 score
