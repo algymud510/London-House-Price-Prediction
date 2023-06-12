@@ -49,7 +49,7 @@ function onClickedEstimatePrice() {
       receptions: receptions,
   },function(data, status) {
       console.log(data.estimated_price);
-      estPrice.innerHTML = "<h2>" + data.estimated_price.toString();
+      estPrice.innerHTML = "<h2>&pound;" + data.estimated_price.toString();
       console.log(status);
   });
 }
