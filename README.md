@@ -10,7 +10,7 @@ Deployed Website : www.londonplaces.online
 ## Business problem
 When people are looking for a house to purchase, they may not know what the market place is like and what to expect in terms of prices. The real estate website of the city of London could help counter that problem for individuals who are looking for houses with certain types of specifications and are helped to estimate the price of that house without having to contact a middleman or real estate agent. 
 
- File Structure:
+ ## File Structure:
  model - contains the jupyter notebook file, saved model and dataset files 
  server - contains Flask server code and artifacts like the model used for the backend operations of the   website
  client - contains the HTML and CSS code for the Real estate website
